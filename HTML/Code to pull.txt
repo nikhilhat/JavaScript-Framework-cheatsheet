@@ -1,0 +1,149 @@
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo
+$ git clone https://github.com/team-5Rigved/trial-repo.git
+Cloning into 'trial-repo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo
+$ cd trial-repo/
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ touch Hallo.txt
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ ls
+Hallo.txt  sourabh.txt
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hallo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git add ,
+fatal: pathspec ',' did not match any files
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git add .
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git commit -m "First Commit"
+[main dc6d3fa] First Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hallo.txt
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 145.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/team-5Rigved/trial-repo.git
+   336d1c6..dc6d3fa  main -> main
+branch 'main' set up to track 'origin/main'.
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hallo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git branch Nikhil_Branch
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (main)
+$ git checkout Nikhil_Branch
+Switched to branch 'Nikhil_Branch'
+M       Hallo.txt
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Nikhil_Branch
+
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ git status
+On branch Nikhil_Branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hallo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ git add .
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ git commit -m "modified hallo.txt"
+[Nikhil_Branch a2f1552] modified hallo.txt
+ 1 file changed, 1 insertion(+)
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ git push -u origin Nikhil_Branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Nikhil_Branch' on GitHub by visiting:
+remote:      https://github.com/team-5Rigved/trial-repo/pull/new/Nikhil_Branch
+remote:
+To https://github.com/team-5Rigved/trial-repo.git
+ * [new branch]      Nikhil_Branch -> Nikhil_Branch
+branch 'Nikhil_Branch' set up to track 'origin/Nikhil_Branch'.
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$ quit
+bash: quit: command not found
+
+ASUS@LAPTOP-H2BF4K6R MINGW64 ~/OneDrive/Desktop/trial-repo/trial-repo (Nikhil_Branch)
+$
