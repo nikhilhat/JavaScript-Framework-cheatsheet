@@ -1,13 +1,11 @@
-# JavaScript-Framework-cheatsheet
-THIS REPO IS ALL ABOUT THE POPULAR AND LEADING FRAMEWORKS OF JAVASCRIPT. 
-This Repo includes 
-# HTML
-# CSS
-# BOOTSTRAP
-# MONGODB
-# SQL
-# ANGULAR
-# NODE-JS
-# REACT-JS
-# J-QUERY
-# 
+The "#JavaScript-Framework-cheatsheet" 
+repository is dedicated to showcasing the most popular and influential JavaScript frameworks, covering a wide range of technologies including 
+#HTML, 
+#CSS, 
+#Bootstrap, 
+#MongoDB, 
+#SQL, 
+#Angular, 
+#Node.js, 
+#React.js, and 
+#jQuery.
